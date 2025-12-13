@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 @Slf4j
 @RestController
-@RequestMapping
+@RequestMapping("/ip")
 public class IpController {
 
     @GetMapping
