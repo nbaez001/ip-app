@@ -23,7 +23,7 @@ public class IpController {
     public String getHostname() {
         try {
             InetAddress inetAddress = InetAddress.getLocalHost();
-            return inetAddress.getHostName();
+            return inetAddress.getHostName() + " Version: V2";
         } catch (UnknownHostException e) {
             log.error(Arrays.toString(e.getStackTrace()));
             return "Unable to determine hostname";
